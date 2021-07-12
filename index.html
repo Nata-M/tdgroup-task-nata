@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="animation.css">
+	<script src='main.js'></script>
+	<title>Task Nata</title>
+</head>
+
+<body>
+	<div class='container'>
+		<div class='left-container'>
+			<img alt='logo' src='images/callapp.svg' />
+		</div>
+		<div class='vertical-line'></div>
+		<div class='right-container'>
+			<div class='auth' id='form-1'>
+				<h1>სისტემაში შესვლა</h1>
+				<form id='form'>
+					<input id='user' name="username" type='text' class='input-style' placeholder='მომხმარებელი'
+						required />
+					<div id='input-style-div' class='input-style-div'>
+						<input id='pass' class='input-style' type='password' name='password' placeholder='პაროლი'
+							required>
+						<img onclick='showPassword()' id='eye' alt='password' src='images/eye.svg' />
+					</div>
+					<div class='password-checkbox'>
+						<div>
+							<input id='checkbox' type='checkbox' name='ckeckbox' />
+							<label for='checkbox'>დაიმახსოვრე პაროლი</label>
+						</div>
+						<a class='link' onclick='forgetPassword()'>დაგავიწყდა პაროლი</a>
+					</div>
+					<div class='input-select'>
+						<select class='input-style select' name="number" id="select-num">
+							<option>ნომერი</option>
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+						</select>
+						<img class='arrow' alt='arrow' src=images/arrow.svg />
+						<div id='ellipse' class='tooltip'>
+							<div id='tooltiptext' class='tooltiptext'>შიდა ნომრის არჩევა
+								სავალდებულოა თანამშრომლებისთვის,
+								რომლებმაც უნდა მიიღონ და
+								შინაარსობრივად დაამუშაონ
+								სატელეფონო მომართვები</div>
+							<img alt='ellipse' class='ellipse' src='images/Ellipse.svg' />
+						</div>
+					</div>
+					<input id='submit' type='submit' onclick='validateUser()' class='submit' value='შესვლა' />
+				</form>
+			</div>
+			<div class='auth' id='form-2'>
+				<h1>დაგავიწყდა პაროლი ?!</h1>
+				<form id='form-3'>
+					<input id='pass-reset' type='text' class='input-style' placeholder='მომხმარებელი' />
+					<div id='input-radio'>
+						<div>
+							<label class='radio-container'>
+								<input type='radio' id='sms' name='radio' checked='checked' />
+								SMS
+								<span class="checkmark"></span>
+							</label>
+						</div>
+						<div>
+							<label class='radio-container'>
+								<input type='radio' id='email' name='radio' />
+								Email
+								<span class="checkmark"></span>
+							</label>
+						</div>
+					</div>
+					<button id='button-send' onclick=' sendMessage()' type='button' class='submit'>შემდეგი</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

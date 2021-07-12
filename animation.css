@@ -1,0 +1,50 @@
+@keyframes user {
+	from {
+		opacity: 0;
+		top: 10px;
+	}
+	to {
+		opacity: 1;
+		top: 0px;
+	}
+}
+@keyframes pass {
+	from {
+		opacity: 0;
+		top: 16px;
+	}
+	to {
+		opacity: 1;
+		top: 0px;
+	}
+}
+@keyframes checkbox {
+	from {
+		opacity: 0;
+		top: 20px;
+	}
+	to {
+		opacity: 1;
+		top: 0px;
+	}
+}
+@keyframes select {
+	from {
+		opacity: 0;
+		top: 24px;
+	}
+	to {
+		opacity: 1;
+		top: 0px;
+	}
+}
+@keyframes submit {
+	from {
+		opacity: 0;
+		top: 30px;
+	}
+	to {
+		opacity: 1;
+		top: 0px;
+	}
+}
